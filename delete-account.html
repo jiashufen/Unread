@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNREAD 删除账号说明</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #06090c;
+      --panel: rgba(20, 24, 29, 0.94);
+      --line: rgba(255, 255, 255, 0.08);
+      --text: #f3f7fb;
+      --text-soft: rgba(243, 247, 251, 0.72);
+      --accent: #20d5c0;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at bottom right, rgba(32, 213, 192, 0.14), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      padding: 40px 20px 56px;
+    }
+    .shell { width: min(820px, 100%); margin: 0 auto; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      padding: 28px 22px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+      margin-bottom: 10px;
+    }
+    .brand::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(32, 213, 192, 0.45);
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 4vw, 42px);
+      font-weight: 600;
+    }
+    .meta {
+      margin: 0 0 22px;
+      color: var(--text-soft);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    h2 {
+      margin: 26px 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    p, li {
+      color: var(--text-soft);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    ul, ol { margin: 8px 0 0; padding-left: 20px; }
+    .note {
+      margin-top: 22px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-soft);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <div class="brand">UNREAD Delete</div>
+      <h1>删除账号说明</h1>
+      <p class="meta">
+        最后更新：2026-06-03<br>
+        本页面说明 UNREAD 用户如何删除账号，以及删除后会处理哪些数据。
+      </p>
+
+      <h2>1. 如何在应用内删除账号</h2>
+      <ol>
+        <li>登录 UNREAD。</li>
+        <li>进入“个人账号”页面。</li>
+        <li>点击“注销账号”。</li>
+        <li>在确认页面再次点击“确认注销账号”。</li>
+      </ol>
+
+      <h2>2. 删除后会处理哪些数据</h2>
+      <ul>
+        <li>当前账号会从系统中移除。</li>
+        <li>与该账号关联的聊天记录和状态文件会一并删除。</li>
+        <li>与该账号关联的关系状态、记忆状态和本地反馈记录会一并清理。</li>
+      </ul>
+
+      <h2>3. 是否有保留期</h2>
+      <p>当前版本中，确认删除后会直接执行删除流程，不提供可自行恢复的保留期。已删除的数据通常不可恢复。</p>
+
+      <h2>4. 需要帮助时</h2>
+      <p>如你无法登录账号，或对删除流程和数据处理有疑问，请通过应用内反馈入口联系产品方，并同时参考 <a href="./privacy.html">隐私政策</a>。</p>
+
+      <div class="note">
+        账号删除属于不可恢复操作。发起删除前，请确认你已经处理好需要保留的信息。
+      </div>
+    </section>
+  </main>
+</body>
+</html>
